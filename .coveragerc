@@ -1,0 +1,5 @@
+[run]
+source = ./codigo
+
+[html]
+directory = coverage_relatorio_html
