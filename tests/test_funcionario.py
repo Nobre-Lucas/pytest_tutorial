@@ -54,4 +54,13 @@ class TestFuncionario:
             resultado_obtido = funcionario.calcular_bonus()
             
             assert resultado_obtido
-            
+    
+    def test_retorno_str(self):
+        entrada_dada = 'Lucas Nobre Barbosa', '18/04/2001', 12000
+        saida_esperada = f'Funcionario({entrada_dada[0]}, {entrada_dada[1]}, {entrada_dada[2]})'
+        
+        funcionario = Funcionario(entrada_dada[0], entrada_dada[1], entrada_dada[2])
+        resultado_obtido = funcionario.__str__()
+        
+        assert resultado_obtido == saida_esperada
+                    
